@@ -48,7 +48,8 @@ const renderMealInfo = searchedMeal => {
     const mealDetailsDiv = document.getElementById('meal-details-area');
     mealDetailsDiv.innerHTML = `
     <img src="${searchedMeal.strMealThumb}" >
-    <h1>Ingredients of ${searchedMeal.strMeal}</h1>
+    <h1 class ="text-left">${searchedMeal.strMeal}</h1>
+    <h4 class ="text-left">Ingredients</h4>
     <ul style = "list-style-type:none;">
         <li><i class="icon-check icons"></i>${searchedMeal.strMeasure1}, ${searchedMeal.strIngredient1}</li>
         <li><i class="icon-check icons"></i>${searchedMeal.strMeasure2}, ${searchedMeal.strIngredient2}</li>
