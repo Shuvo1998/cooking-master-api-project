@@ -28,7 +28,7 @@ const displayMeals = meals => {
                     <div>
                     <img src="${meal.strMealThumb}">
                     <h4 >${meal.strMeal}</h4>
-                    <button  onclick="displayMealDetails('${meal.idMeal}')">Details</button>
+                    <button class="btn btn-outline-success" onclick="displayMealDetails('${meal.idMeal}')">Details</button>
                     </div>
                 `;
             mealDiv.innerHTML = mealInfo;
