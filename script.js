@@ -47,7 +47,7 @@ const displayMealDetails = name => {
 const renderMealInfo = searchedMeal => {
     const mealDetailsDiv = document.getElementById('meal-details-area');
     mealDetailsDiv.innerHTML = `
-    <img src="${searchedMeal.strMealThumb}" >
+    <img class ="shadow p-3 mb-5 bg-white rounded ml-10" src="${searchedMeal.strMealThumb}" >
     <h1 class ="text-left">${searchedMeal.strMeal}</h1>
     <h4 class ="text-left">Ingredients</h4>
     <ul style = "list-style-type:none;">
