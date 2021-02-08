@@ -8,11 +8,11 @@ searchBtn.addEventListener('click',() => {
     if (searchedText === '') {
         warningMessage.style.display = 'block';
     } else {
-        getFood(searchedText);
+        getMeal(searchedText);
         warningMessage.style.display = 'none';
     }
 });
-function getFood(mealId) {
+function getMeal(mealId) {
     const mealUrl = `https://www.themealdb.com/api/json/v1/1/search.php?s=${mealId}`;
     fetch(mealUrl)
         .then(res => res.json())
@@ -23,7 +23,7 @@ const displayMeals = meals => {
     if (meals != null) {
         meals.map(meal => {
             const mealDiv = document.createElement('div');
-            mealDiv.className = 'col-md-3';
+            mealDiv.className = 'col-md-3 shadow p-3 mb-5 bg-white rounded ml-10';
             const mealInfo = `
                     <div>
                     <img src="${meal.strMealThumb}">
@@ -64,5 +64,4 @@ const renderMealInfo = searchedMeal => {
 mealDetailsDiv.className = 'text-center';
 // mealDetailsDiv.style.alignContent = 'left';
 searchArea.style.display = 'none';
-
 };

@@ -11,7 +11,7 @@ a {
     display: none;
 }
 img{
-    width: 25%;
+    width: 50%;
 }
 /* search bar */
 .searchContainer {
@@ -23,7 +23,7 @@ img{
     overflow: hidden;
   }
   .searchContainer:focus-within i {
-    display: none;
+    display: block;
   }
   .searchContainer:focus-within .searchBox{
     grid-column:1/4;
